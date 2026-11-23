@@ -1,0 +1,235 @@
+
+/* =================================
+   NOVA - LOGIN & SIGNUP STYLES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Background */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #30205e,
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #172c62,
+            transparent 45%
+        ),
+        #080b18;
+
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* Login Card */
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+
+    animation: fadeIn 0.8s ease;
+}
+
+/* Logo */
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #60a5fa;
+}
+
+/* Subtitle */
+
+.subtitle {
+    text-align: center;
+    color: #aab2c5;
+    margin: 15px 0 35px;
+    line-height: 1.6;
+}
+
+/* Labels */
+
+label {
+    display: block;
+    margin: 18px 0 9px;
+    color: #ddd6fe;
+    font-size: 14px;
+}
+
+/* Input Fields */
+
+input {
+    width: 100%;
+    padding: 15px;
+
+    background: #151a2c;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 9px;
+
+    color: white;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #788197;
+}
+
+input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.2);
+}
+
+/* Password Container */
+
+.password-box {
+    display: flex;
+    gap: 8px;
+}
+
+.password-box input {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Show / Hide Password */
+
+.password-box button {
+    background: #292344;
+    color: white;
+
+    border: 1px solid #ffffff20;
+    border-radius: 8px;
+
+    padding: 0 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.password-box button:hover {
+    background: #493779;
+}
+
+/* Main Button */
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 28px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #4f46e5
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(124, 58, 237, 0.35);
+}
+
+/* Form Message */
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    color: #a78bfa;
+    font-size: 14px;
+}
+
+/* Bottom Text */
+
+.bottom-text {
+    text-align: center;
+    color: #aab2c5;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* Links */
+
+a {
+    color: #a78bfa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #60a5fa;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 28px 22px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}
+ 
