@@ -11,25 +11,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- NOVA BACKEND CONNECTION -->
-<section id="backend-section">
-    <h2>Nova Backend Connection</h2>
-    <p>Click below to get information from our server.</p>
-
-    <button id="apiButton">Connect to Backend</button>
-
-    <div id="apiResult">
-        Waiting for server connection...
-    </div>
-</section>
-
 <body>
 
     <!-- NAVIGATION -->
-
     <nav class="navbar">
 
-        <a href="login.html">Login</a>>
+        <a href="#home" class="logo">N<span>ova</span></a>
 
         <button class="menu-toggle" id="menuToggle"
             aria-label="Toggle navigation"
@@ -42,13 +29,13 @@
             <a href="#features">Features</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <a href="login.html">Login</a>
         </div>
 
     </nav>
 
 
     <!-- HERO SECTION -->
-
     <section class="hero" id="home">
 
         <div class="hero-content">
@@ -79,83 +66,156 @@
 
     </section>
 
-<!-- FEATURES SECTION -->
-<section class="features cards" id="features">
 
-    <div class="card">
-        <h3>✦ Creativity</h3>
-        <p>Turn your imagination into something extraordinary.</p>
-    </div>
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
 
-    <div class="card">
-        <h3>⚡ Innovation</h3>
-        <p>Explore fresh ideas and modern technology.</p>
-    </div>
+        <div class="section-heading">
+            <span>WHAT WE OFFER</span>
+            <h2>Explore Nova</h2>
+            <p>A space built for creativity and innovation.</p>
+        </div>
 
-    <div class="card">
-        <h3>◈ Experience</h3>
-        <p>Enjoy a clean and beautiful digital experience.</p>
-    </div>
+        <div class="cards">
 
-</section>
+            <div class="card">
+                <h3>✦ Creativity</h3>
+                <p>
+                    Turn your imagination into something extraordinary.
+                </p>
+            </div>
 
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-    <div class="about-content">
-        <span>ABOUT NOVA</span>
+            <div class="card">
+                <h3>⚡ Innovation</h3>
+                <p>
+                    Explore fresh ideas and modern technology.
+                </p>
+            </div>
 
-        <h2>
-            Ideas deserve<br>
-            <span>to become reality.</span>
-        </h2>
+            <div class="card">
+                <h3>◈ Experience</h3>
+                <p>
+                    Enjoy a clean and beautiful digital experience.
+                </p>
+            </div>
 
-        <p>
-            Nova is a creative digital space
-            designed to inspire innovation,
-            creativity and new possibilities.
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <span>ABOUT NOVA</span>
+
+            <h2>
+                Ideas deserve<br>
+                <span>to become reality.</span>
+            </h2>
+
+            <p>
+                Nova is a creative digital space
+                designed to inspire innovation,
+                creativity and new possibilities.
+            </p>
+
+            <button class="primary-btn" onclick="showMessage()">
+                Discover More →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS SECTION -->
+    <section class="stats" id="stats">
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="150">0</h2>
+            <p>Creative Ideas</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="80">0</h2>
+            <p>Happy Users</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="25">0</h2>
+            <p>Projects</p>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="about" id="contact">
+
+        <div class="about-content">
+            <span>GET IN TOUCH</span>
+
+            <h2>
+                Have an idea?<br>
+                <span>Start with Nova.</span>
+            </h2>
+
+            <p>
+                Keep exploring, creating and building
+                something new with Nova.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- BACKEND CONNECTION SECTION -->
+    <section class="about" id="backend-section">
+
+        <div class="about-content">
+
+            <span>LIVE SERVER CONNECTION</span>
+
+            <h2>Nova Backend Connection</h2>
+
+            <p>
+                Click below to get information from our server.
+            </p>
+
+            <button class="primary-btn" id="apiButton">
+                Connect to Backend
+            </button>
+
+            <div id="apiResult">
+                Waiting for server connection...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Nova<span> ✦</span></h2>
+
+        <p>Think Beyond. Create More.</p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 Nova. All rights reserved.
         </p>
 
-        <button onclick="showMessage()">
-            Discover More →
-        </button>
-    </div>
-</section>
+    </footer>
 
-<!-- STATISTICS SECTION -->
-<section class="stats" id="stats">
 
-    <div class="stat-box">
-        <h2 class="counter" data-target="150">0</h2>
-        <p>Creative Ideas</p>
-    </div>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
-    <div class="stat-box">
-        <h2 class="counter" data-target="80">0</h2>
-        <p>Happy Users</p>
-    </div>
-
-    <div class="stat-box">
-        <h2 class="counter" data-target="25">0</h2>
-        <p>Projects</p>
-    </div>
-
-</section>
-
-<script src="script.js"></script>
-<section id="backend-section">
-    <h2>Nova Backend Connection</h2>
-
-    <p>Click below to get information from our server.</p>
-
-    <button id="apiButton">Connect to Backend</button>
-
-    <div id="apiResult">
-        Waiting for server connection...
-    </div>
-</section>
 </body>
 </html>
-
-
-
-       
