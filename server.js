@@ -1,20 +1,24 @@
 
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Allow the server to understand JSON data
+app.use(cors());
 app.use(express.json());
 
-// First API route
+// Serve Nova frontend files
+app.use(express.static(__dirname));
+
+// Homepage
 app.get("/", (req, res) => {
-    res.send("Welcome to Nova Backend!");
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Nova API - Basic information
+// Nova API
 app.get("/api/info", (req, res) => {
     res.json({
         name: "Nova",
@@ -24,7 +28,10 @@ app.get("/api/info", (req, res) => {
     });
 });
 
-// Start the server
+// Start server
 app.listen(PORT, () => {
-    console.log(`Nova server is running at http://localhost:${PORT}`);
+    console.log(`Nova server running on port ${PORT}`);
 });
+app.get("/test", (req, res) => {
+    res.send("NOVA UPDATED SERVER WORKING!");
+}); 
